@@ -1,22 +1,25 @@
 import React from "react";
-import entrar from '../imagens/entrar.png'
-import uslogin from '../imagens/uslogin.jpg'
+import Entrar from "./Entrar";
+import Login from "./Login";
+import Menu from "./Menu";
+import styled from "styled-components";
 
+const CabecalhoContainer = styled.header `
+  display: flex;
+  height: 10vh; /*viewport height; viewport = tela toda (vh estará no id/class/tag que estiver como elemento 'pai')*/
+  background-color: rgb(0, 163, 109);
+  justify-content: space-between; /*justifica conteúdo em relação a distribuição entre elementos dessa tag*/
+  align-items: center; /*alinha os items em relação a tela dessa tag*/`
 
 function Cabecalho (){
     return (
-        <header id='cabecalho'>
+        <CabecalhoContainer>
 
-        <img id="entrar"src={entrar} alt='pedra do sol'></img>
-  
-          <ul id="menu">
-            <li id='li1'>HOME</li>
-            <li id='li2'>PRODUTOS</li>
-            <li id='li2'>CATEGORIAS</li>
-          </ul>
-  
-          <img id="uslogin" src={uslogin} alt='pedras roxas'></img>
-        </header> /*só pode ter um "pai", se por um <p> fora da header, por exemplo, vai dar erro*/
+        <Entrar></Entrar>
+        <Menu></Menu>
+        <Login></Login>
+        </CabecalhoContainer>
+        //</header> /*só pode ter um "pai", se por um <p> fora da header, por exemplo, vai dar erro*/
     ); /*dentro do return podem ter mais 'pais'*/
 }
 
