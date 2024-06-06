@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+}
+
+#cabecalho{
+  display: flex;
+  height: 10vh; /*viewport height; viewport = tela toda (vh estará no id/class/tag que estiver como elemento 'pai')*/
+  background-color: rgb(0, 163, 109);
+  justify-content: space-between; /*justifica conteúdo em relação a distribuição entre elementos dessa tag*/
+  align-items: center; /*alinha os items em relação a tela dessa tag*/
+}
+
+#entrar{
+  height: 80%; /*usa a porcentagem pq é 10% em relação ao viewport, que por sua vez, tem relação com a tela*/
+  margin-left: 20px;
+}
+
+#uslogin{
+  height: 80%;
+  margin-right: 20px;
+}
+
+#menu{
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  li{
+    margin: 5%;
+  }
+}
