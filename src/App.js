@@ -3,6 +3,7 @@ import Cabecalho from './componentes/Cabecalho';
 import Entrar from './componentes/Entrar';
 import Menu from './componentes/Menu';
 import Login from './componentes/Login';
+import Grid from './componentes/Grid';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
        <Entrar></Entrar>
        <Menu></Menu>
        <Login></Login>
+       <Grid></Grid>
     </div>
   );  //as letras verdes indicam componente react
 }
